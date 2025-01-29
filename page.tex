@@ -1,0 +1,49 @@
+\documentclass{article}
+
+% Author: Subhodeep Sarkar
+% Date: 7 April, 2021
+
+%generate dots and set the geometry
+% I like really thin margins. Feel free to  adjust this
+% as per your tastes.
+
+\usepackage[pattern=dot, 
+patternsize=0.2in, 
+textarea,
+geometry={
+	a4paper,
+	left=10pt,
+	right=10pt,
+	top=8mm,
+	bottom=10pt,
+	headsep=5pt,
+}
+]{gridpapers}
+% https://github.com/mcnees/LaTeX-Graph-Paper
+% thanks Prof. McNees and Prof. Leo
+%you can print grids or triangles as well
+
+%header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%header and footer text
+\lhead{\textcolor{gray}{Spencer Weaver}}
+\rhead{\textcolor{gray}{Date: {~~~-~~~-~~~~}; Page Number: {~~~~}}}
+
+%colouring the horizontal lines in the header and footer
+% https://tex.stackexchange.com/questions/375121/change-horizontal-line-color-on-top-of-footer
+\renewcommand{\headrulewidth}{0.3pt}
+% Save standard definitions
+\let\HeadRule\headrule
+\let\FootRule\footrule
+% Add color to standard definitions.
+\renewcommand\headrule{\color{gray}\HeadRule}
+
+%all done
+
+\begin{document}
+	
+	~ %otherwise there will be an error
+	
+\end{document}
