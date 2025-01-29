@@ -7,8 +7,14 @@
 % I like really thin margins. Feel free to  adjust this
 % as per your tastes.
 
+
+\usepackage{xcolor}
+
+\definecolor{color}{HTML}{1d1d1d}
+
 \usepackage[pattern=dot, 
-patternsize=0.2in, 
+patternsize=0.2in,
+minorcolor={color!40},
 textarea,
 geometry={
 	a4paper,
@@ -28,8 +34,8 @@ geometry={
 \pagestyle{fancy}
 
 %header and footer text
-\lhead{\textcolor{gray}{Spencer Weaver}}
-\rhead{\textcolor{gray}{Date: {~~~-~~~-~~~~}; Page Number: {~~~~}}}
+\lhead{\textcolor{color}{Spencer Weaver}}
+\rhead{\textcolor{color}{Date: {~~~-~~~-~~~~}; Page Number: {~~~~}}}
 
 %colouring the horizontal lines in the header and footer
 % https://tex.stackexchange.com/questions/375121/change-horizontal-line-color-on-top-of-footer
@@ -38,12 +44,11 @@ geometry={
 \let\HeadRule\headrule
 \let\FootRule\footrule
 % Add color to standard definitions.
-\renewcommand\headrule{\color{gray}\HeadRule}
+\renewcommand\headrule{\color{color}\HeadRule}
 
 %all done
 
 \begin{document}
-	
 	~ %otherwise there will be an error
 	
 \end{document}
